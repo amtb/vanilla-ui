@@ -1,0 +1,7 @@
+.star-rating:hover .star, .star.checked {
+  color: orange;
+}
+
+.star:hover ~ .star {
+  color: black;
+}
