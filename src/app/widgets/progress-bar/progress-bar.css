@@ -1,0 +1,11 @@
+  
+.progress-bar-item {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: khaki;
+}
+
+.progress-bar-item.selected {
+  background-color: blue;
+}

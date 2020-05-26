@@ -6,10 +6,13 @@ const dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
   mode: 'development',
-  entry: './src/app/index.js',
+  entry: {
+    lib: './src/app/index.js',
+    app: './src/app/app.js'
+  },
   output: {
     path: dist,
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
