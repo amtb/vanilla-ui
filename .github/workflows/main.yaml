@@ -1,0 +1,19 @@
+name: CI pipeline
+on:  
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install dependencies
+      run: yarn
+    - name: build
+      run: |
+        yarn build
+    # - name: test
+    #   run: |
+    #     yarn test --runInBand

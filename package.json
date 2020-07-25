@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "webpack",
     "lint": "eslint src/**/*.js",
     "start": "webpack-dev-server --open",
     "test": "jest"
